@@ -1,0 +1,28 @@
+/* ################ ADD TRAVEL PAGE  ####################### */
+.add-travel-container-primary {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
+
+.add-travel-title {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.add-travel-container-secondary {
+  display: flex;
+  max-width: 50rem;
+  gap: 1rem;
+  background-color: #5cb9e410;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 5px;
+  position: relative;
+  color: var(--text-color);
+}
+
+.btn-add-travel-disabled {
+  background-color: #8758ff7a;
+  color: #f2f2f227;
+}

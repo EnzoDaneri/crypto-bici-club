@@ -1,0 +1,13 @@
+/* ################ ADD LIK TRAVEL  ################## */
+.add-link-travel-container {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
+.add-link-travel-container span {
+  color: var(--text-color);
+}
+
+.add-link-travel-form {
+  margin-top: 2rem;
+}

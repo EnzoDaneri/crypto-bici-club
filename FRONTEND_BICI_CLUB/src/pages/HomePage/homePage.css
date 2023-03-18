@@ -1,0 +1,38 @@
+/* ########### HOME PAGE ############## */
+.home-page-container {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
+
+.home-page-container h1 {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.user-info-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 50rem;
+  background-color: #5cb9e410;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 5px;
+  position: relative;
+  color: var(--text-color);
+}
+
+.user-profile-image {
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.home-page-container span {
+  color: var(--secondary-color);
+}
+
+.btn-add-travel {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}

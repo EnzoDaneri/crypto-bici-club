@@ -1,0 +1,23 @@
+.login-container {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
+.login-container h1 {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.login-container span {
+  color: var(--secondary-color);
+}
+
+.btn-submit-login {
+  width: 13rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  height: 2.5rem;
+  margin-top: 0.5rem;
+}

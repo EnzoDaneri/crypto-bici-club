@@ -1,0 +1,7 @@
+/* ########### SET NAME ################ */
+
+.set-name-container {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
