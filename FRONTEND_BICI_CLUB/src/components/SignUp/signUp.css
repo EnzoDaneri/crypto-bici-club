@@ -3,21 +3,27 @@
 .signUp-container {
   display: grid;
   place-items: center;
-  margin-top: 7rem;
+  background-color: var(--primary-color);
+  background-image: url('../../images/2-bici-club.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .signUp-container h1 {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
+  margin-top: 2rem;
 }
 
 .signUp-container h2 {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .signUp-container span {
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .btn-submit-signup {
