@@ -1,11 +1,16 @@
 ![Bici club logo](./FRONTEND_BICI_CLUB/src/images/logo-bici-club.jpg)
+
 #Crypto Bici Club
 
 ## Collaborative and open source work carried out by the [Podemos Aprender](https://discord.gg/gymbmn7w) community
 
 Project that consists of the development of a club of urban cyclists who, in a decentralized and independent way, use their bicycle to get around the city, adding points and obtaining rewards in the form of collectible NFTs.
 
----
+![Bici club logo](./example_images/2-flujo-pantallas-bici-club.png)
+
+![Bici club logo](./example_images/5-flujo-pantallas-bici-club.png)
+
+## ![Bici club logo](./example_images/7-flujo-pantallas-bici-club.png)
 
 ### Used Technologies:
 
