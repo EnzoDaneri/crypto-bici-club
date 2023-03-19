@@ -9,6 +9,7 @@
 -web3
 -styled-components
 -@oppenzepelin/contracts
+-react-router-dom (v6).
 
 ---
 

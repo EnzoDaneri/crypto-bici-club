@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../../App.css';
+import biker_girl_image from '../../images/biker-girl.jpg';
 
 function SignUp() {
   return (
