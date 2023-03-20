@@ -1,7 +1,7 @@
 {
   "name": "bici-club",
   "homepage": "https://EnzoDaneri.github.io/crypto-bici-club",
-  "private": false,
+  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
