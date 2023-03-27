@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 
 function AddTravelPage() {
@@ -29,13 +30,16 @@ function AddTravelPage() {
             Otro
           </button>
         </div>
-        <button
-          className={
-            isOptionSelected ? 'btn-add-travel' : 'btn-add-travel-disabled'
-          }
-        >
-          Agregar viaje
-        </button>
+        <Link to={'../addLinkTravel'}>
+          {' '}
+          <button
+            className={
+              isOptionSelected ? 'btn-add-travel' : 'btn-add-travel-disabled'
+            }
+          >
+            Agregar viaje
+          </button>
+        </Link>
       </div>
     </div>
   );

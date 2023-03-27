@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '../../App.css';
 import avatar_image from '../../images/avatar.svg';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   const user = useSelector((state) => state.user);
@@ -21,7 +22,9 @@ function HomePage() {
           <span> {user.points} </span>
           <span> Level: {user.level} </span>
         </div>
-        <button className='btn-add-travel'>Agregar viaje</button>
+        <Link to={'../addTravel'}>
+          <button className='btn-add-travel'>Agregar viaje</button>
+        </Link>
       </div>
     </div>
   );

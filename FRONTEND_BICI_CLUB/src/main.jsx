@@ -8,6 +8,8 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
+import AddTravelPage from './pages/AddTravelPage/AddTravelPage';
+import AddLinkTravel from './components/AddLinkTravel/AddLinkTravel';
 
 const router = createHashRouter([
   //A: compatible desplegar en coso.com/micarpeta/ ej gitpages
@@ -18,6 +20,14 @@ const router = createHashRouter([
   {
     path: 'home',
     element: <HomePage />,
+  },
+  {
+    path: 'addtravel',
+    element: <AddTravelPage />,
+  },
+  {
+    path: 'addLinkTravel',
+    element: <AddLinkTravel />,
   },
   {
     path: '*',
