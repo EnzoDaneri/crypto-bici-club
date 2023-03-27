@@ -8,12 +8,14 @@ import SignUp from '../components/SignUp/SignUp';
 import logo_bici_club from '../images/logo-bici-club.jpg';
 import AddTravelPage from '../pages/AddTravelPage/AddTravelPage';
 import HomePage from '../pages/HomePage/HomePage';
+import store from '../redux/store/store';
+import { Provider } from 'react-redux';
 
 function Root() {
   const [isMember, setIsmember] = useState(false);
 
   return (
-    <>
+    <Provider store={store}>
       <div className='navbar'>
         <img className='logo-image-navbar' src={logo_bici_club} />
       </div>
@@ -30,7 +32,7 @@ function Root() {
         // <AddLinkTravel />
       )}
       <div className='footer'></div>
-    </>
+    </Provider>
   );
 }
 
