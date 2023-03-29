@@ -10,7 +10,6 @@ import AddTravelPage from '../pages/AddTravelPage/AddTravelPage';
 import HomePage from '../pages/HomePage/HomePage';
 import store from '../redux/store/store';
 import { Provider, useDispatch } from 'react-redux';
-import { json } from 'react-router-dom';
 import { addUser } from '../redux/store/userSlice';
 
 function Root() {

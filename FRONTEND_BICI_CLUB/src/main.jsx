@@ -22,6 +22,14 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
+    path: 'login',
+    element: <Login />,
+  },
+  {
+    path: 'signup',
+    element: <SignUp />,
+  },
+  {
     path: 'addtravel',
     element: <AddTravelPage />,
   },

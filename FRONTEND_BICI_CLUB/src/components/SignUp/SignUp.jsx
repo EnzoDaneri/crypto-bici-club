@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 import biker_girl_image from '../../images/biker-girl.jpg';
 
@@ -14,7 +15,10 @@ function SignUp() {
           <button className='btn-submit-signup'>Google</button>
         </form>
         <div>
-          <span>Ya tengo cuenta</span>
+          <Link to={'../login'}>
+            {' '}
+            <span>Ya tengo cuenta</span>
+          </Link>
         </div>
       </div>
     </div>
