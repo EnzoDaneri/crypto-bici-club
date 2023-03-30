@@ -16,11 +16,12 @@ function Login() {
         <form action=''>
           <label>Continuar con:</label>
           <FacebookLogin
-            className='btn-submit-login'
+            className='btn-submit-login-facebook'
             appId={facebookId}
             autoLoad={false}
             fields='name,email,picture'
             // onClick={componentClicked}
+            cssClass='btn-submit-login'
             callback={responseFacebook}
           />
           {/* <button className='btn-submit-login'>Facebook</button> */}
