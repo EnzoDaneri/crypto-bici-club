@@ -18,7 +18,7 @@ function Login() {
           <FacebookLogin
             className='btn-submit-login'
             appId={facebookId}
-            autoLoad={true}
+            autoLoad={false}
             fields='name,email,picture'
             // onClick={componentClicked}
             callback={responseFacebook}
