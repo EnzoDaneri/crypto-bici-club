@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.1",
+    "@react-oauth/google": "^0.9.0",
     "@reduxjs/toolkit": "^1.9.3",
     "gh-pages": "^5.0.0",
     "localforage": "^1.10.0",

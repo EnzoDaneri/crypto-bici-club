@@ -3,6 +3,8 @@ import { Link, Navigate } from 'react-router-dom';
 import FacebookLogin from 'react-facebook-login';
 import '../../App.css';
 import { facebookId } from '../../env/development-const';
+import { googleId } from '../../env/development-const';
+import { GoogleLogin } from '@react-oauth/google';
 
 function Login() {
   const responseFacebook = (response) => {
@@ -25,7 +27,16 @@ function Login() {
             callback={responseFacebook}
           />
           {/* <button className='btn-submit-login'>Facebook</button> */}
-          <button className='btn-submit-login'>Google</button>
+          {/* <button className='btn-submit-login'>Google</button> */}
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+            }}
+            onError={() => {
+              console.log('Login Failed');
+            }}
+          />
+          ;
         </form>
         <div>
           <Link to={'../signup'}>

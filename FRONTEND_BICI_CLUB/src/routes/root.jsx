@@ -11,6 +11,8 @@ import HomePage from '../pages/HomePage/HomePage';
 import store from '../redux/store/store';
 import { Provider, useDispatch } from 'react-redux';
 import { addUser } from '../redux/store/userSlice';
+import { googleId } from '../env/development-const';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function Root() {
   const [isMember, setIsmember] = useState(false);
@@ -24,24 +26,26 @@ function Root() {
   }, []);
 
   return (
-    <Provider store={store}>
-      <div className='navbar'>
-        <img className='logo-image-navbar' src={logo_bici_club} />
-      </div>
+    <GoogleOAuthProvider clientId={googleId}>
+      <Provider store={store}>
+        <div className='navbar'>
+          <img className='logo-image-navbar' src={logo_bici_club} />
+        </div>
 
-      {isMember ? (
-        <Login />
-      ) : (
-        // TODO: ADD ROUTER
-        <SignUp />
-        // <SetUserName />
-        // <SetProfilePicture />
-        // <HomePage />
-        // <AddTravelPage />
-        // <AddLinkTravel />
-      )}
-      <div className='footer'></div>
-    </Provider>
+        {isMember ? (
+          <Login />
+        ) : (
+          // TODO: ADD ROUTER
+          <SignUp />
+          // <SetUserName />
+          // <SetProfilePicture />
+          // <HomePage />
+          // <AddTravelPage />
+          // <AddLinkTravel />
+        )}
+        <div className='footer'></div>
+      </Provider>
+    </GoogleOAuthProvider>
   );
 }
 

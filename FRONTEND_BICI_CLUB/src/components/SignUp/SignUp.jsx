@@ -4,6 +4,7 @@ import '../../App.css';
 import biker_girl_image from '../../images/biker-girl.jpg';
 import { facebookId } from '../../env/development-const';
 import FacebookLogin from 'react-facebook-login';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function SignUp() {
   const responseFacebook = (response) => {
@@ -25,7 +26,6 @@ function SignUp() {
             cssClass='btn-submit-login'
             callback={responseFacebook}
           />
-          {/* <button className='btn-submit-signup'>Facebook</button> */}
           <button className='btn-submit-signup'>Google</button>
         </form>
         <div>
