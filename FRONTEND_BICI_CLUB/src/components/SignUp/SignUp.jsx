@@ -10,6 +10,11 @@ function SignUp() {
   const responseFacebook = (response) => {
     console.log(response);
   };
+
+  const hangleGoogle = () => {
+    console.log('hola')
+  }
+
   return (
     <div className='main-container'>
       <div className='signUp-container'>
@@ -35,6 +40,7 @@ function SignUp() {
           </Link>
         </div>
       </div>
+      
     </div>
   );
 }
